@@ -196,7 +196,8 @@ var blockElements = angular.extend({}, optionalEndTagBlockElements, makeMap("add
 // Inline Elements - HTML5
 var inlineElements = angular.extend({}, optionalEndTagInlineElements, makeMap("a,abbr,acronym,b," +
         "bdi,bdo,big,br,cite,code,del,dfn,em,font,i,img,ins,kbd,label,map,mark,q,ruby,rp,rt,s," +
-        "samp,small,span,strike,strong,sub,sup,time,tt,u,var"));
+        "samp,small,span,strike,strong,sub,sup,time,tt,u,var" +
+        ",iframe,audio,source"));
 
 
 // Special Elements (can contain anything)
@@ -215,7 +216,8 @@ var validAttrs = angular.extend({}, uriAttrs, makeMap(
     'color,cols,colspan,compact,coords,dir,face,headers,height,hreflang,hspace,'+
     'ismap,lang,language,nohref,nowrap,rel,rev,rows,rowspan,rules,'+
     'scope,scrolling,shape,size,span,start,summary,target,title,type,'+
-    'valign,value,vspace,width'));
+    'valign,value,vspace,width' +
+    ',controls,autoplay,style'));
 
 function makeMap(str) {
   var obj = {}, items = str.split(','), i;
