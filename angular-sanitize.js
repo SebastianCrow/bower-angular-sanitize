@@ -217,7 +217,7 @@ var validAttrs = angular.extend({}, uriAttrs, makeMap(
     'ismap,lang,language,nohref,nowrap,rel,rev,rows,rowspan,rules,'+
     'scope,scrolling,shape,size,span,start,summary,target,title,type,'+
     'valign,value,vspace,width' +
-    ',controls,autoplay,style'));
+    ',controls,autoplay,style,allowfullscreen'));
 
 function makeMap(str) {
   var obj = {}, items = str.split(','), i;
